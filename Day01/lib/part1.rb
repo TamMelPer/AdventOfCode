@@ -12,3 +12,5 @@ def find_three_sum_2020_multiplied(entries)
   result = entries_array.combination(3).find_all { |a, b, c| a + b + c == 2020 }
   result.flatten.inject(:*)
 end
+
+@input = File.read("#{__dir__}/input.txt")
