@@ -1,9 +1,6 @@
 def check_password(min, max, letter, password)
-  if (password.count letter) >= min
-    true
-  else
-    false
-  end
+  (password.count letter) >= min ? true : false
+
 end
 
 
