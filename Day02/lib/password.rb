@@ -1,5 +1,5 @@
 def check_password(min, max, letter, password)
-  true
+  password.include? letter
 end
 
 
@@ -31,3 +31,5 @@ end
 # one a or nine c, both within the limits of their respective policies.
 #
 # How many passwords are valid according to their policies?
+#
+#
