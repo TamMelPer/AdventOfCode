@@ -9,8 +9,17 @@ describe '#check_password' do
     expect(check_password(1, 3, "b", "cdefg")).to eq false
   end
 
-  it 'returns true if the password is valid' do
+  it 'returns false if the min is higher than count of letter in password' do
     expect(check_password(2, 3, "a", "abcde")).to eq false
+  end
+
+
+    it 'returns true if the count of the letter in the password is greater than or equal to the min' do
+      expect(check_password(2, 3, "a", "aabcde")).to eq true
+    end
+
+  it 'returns false if the count of letter in password is greater than max' do
+    expect(check_password(2, 3, "a", "aaaabcde")).to eq false
   end
 end
 
