@@ -8,6 +8,10 @@ describe '#check_password' do
   it 'returns false if the password is not valid' do
     expect(check_password(1, 3, "b", "cdefg")).to eq false
   end
+
+  it 'returns true if the password is valid' do
+    expect(check_password(2, 3, "a", "abcde")).to eq false
+  end
 end
 
 
