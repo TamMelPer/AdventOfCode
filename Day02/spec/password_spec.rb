@@ -21,6 +21,11 @@ describe '#check_password' do
   it 'returns false if the count of letter in password is greater than max' do
     expect(check_password(2, 3, "a", "aaaabcde")).to eq false
   end
+
+  it 'returns true if the count of letter in password is less than or equal to max' do
+    expect(check_password(2, 3, "a", "aaabcde")).to eq true
+  end
+
 end
 
 
