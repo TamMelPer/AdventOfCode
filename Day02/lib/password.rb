@@ -1,3 +1,9 @@
+def check_password(min, max, letter, password)
+  true
+end
+
+
+
 # --- Day 2: Password Philosophy ---
 # Your flight departs in a few days from the coastal airport;
 # the easiest way down to the coast from here is via toboggan.
